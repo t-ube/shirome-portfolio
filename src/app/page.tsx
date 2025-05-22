@@ -1,101 +1,95 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="min-h-screen flex flex-col items-center justify-center p-6 space-y-8">
+      <img
+        src="/images/pfp.jpg"
+        alt="Profile picture"
+        className="w-32 h-32 rounded-full border border-gray-300"
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <h1 className="text-4xl font-bold">Shirome</h1>
+      <p className="text-lg text-gray-700">Web Engineer / XRPL Developer</p>
+
+      <a
+        href="https://x.com/shirome_x"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-1 text-gray-700 hover:text-black"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 1200 1227"
+          style={{ verticalAlign: 'middle', fill: 'currentColor' }}
+        >
+          <path d="M711.911 499.438L1144.71 0H1041.48L666.146 433.906L361.674 0H0L456.232 662.103L0 1227H103.238L503.68 763.25L825.354 1227H1187.03L711.911 499.438ZM555.73 699.907L512.768 638.384L143.04 80.289H314.567L601.749 494.452L644.711 555.975L1029.33 1115.54H857.803L555.73 699.907Z" />
+        </svg>
+        <span>@shirome_x</span>
+      </a>
+
+      {/* Project: Owner Note */}
+      <div className="w-full max-w-md bg-gray-100 p-4 rounded shadow">
+        <h2 className="text-xl font-semibold mb-2">Owner Note</h2>
+        <img
+          src="/images/owner-note.png"
+          alt="Owner Note screenshot"
+          className="w-full rounded mb-2"
+        />
+        <p className="text-sm text-gray-600">
+          A wallet address management tool for XRPL NFT creators and collectors. Enables tagging, grouping, and notes for each address.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://owner-note.shirome.net"
           target="_blank"
           rel="noopener noreferrer"
+          className="inline-block mt-3 text-blue-600 underline"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Visit Owner Note
         </a>
+      </div>
+
+      {/* Chrome Extension Project */}
+      <div className="w-full max-w-md bg-gray-100 p-4 rounded shadow">
+        <h2 className="text-xl font-semibold mb-2">Chrome Extension</h2>
+        <img
+          src="/images/owner-note-ext.png"
+          alt="Chrome extension screenshot"
+          className="w-full rounded mb-2"
+        />
+        <p className="text-sm text-gray-600">
+          A Chrome extension that replaces XRPL addresses with user-defined names, integrated with the Owner Note service.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://owner-note.shirome.net"
           target="_blank"
           rel="noopener noreferrer"
+          className="inline-block mt-3 text-blue-600 underline"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+          View Extension
         </a>
+      </div>
+
+      {/* SKULL AVATAR Project */}
+      <div className="w-full max-w-md bg-gray-100 p-4 rounded shadow">
+        <h2 className="text-xl font-semibold mb-2">SKULL AVATAR</h2>
+        <img
+          src="/images/skull-avatar.png"
+          alt="SKULL AVATAR screenshot"
+          className="w-full rounded mb-2"
+        />
+        <p className="text-sm text-gray-600">
+          A dynamic NFT project built on XRPL. Users can customize 3D avatars and mint them as NFTs. Includes real-time previews and blockchain integration.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://skull-avatar.shirome.net"
           target="_blank"
           rel="noopener noreferrer"
+          className="inline-block mt-3 text-blue-600 underline"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          View SKULL AVATAR
         </a>
-      </footer>
-    </div>
+      </div>
+    </main>
   );
 }
