@@ -8,7 +8,7 @@ export default function Home() {
       />
 
       <h1 className="text-4xl font-bold">Shirome</h1>
-      <p className="text-lg text-gray-700">Web Engineer / XRPL Developer</p>
+      <p className="text-lg text-gray-700">XRPL Tool Developer</p>
 
       <a
         href="https://x.com/shirome_x"
@@ -61,7 +61,7 @@ export default function Home() {
           A Chrome extension that replaces XRPL addresses with user-defined names, integrated with the Owner Note service.
         </p>
         <a
-          href="https://owner-note.shirome.net"
+          href="https://chromewebstore.google.com/detail/owner-note/gknlngbijejlhkmmheimhakmppelkbek"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-3 text-blue-600 underline"
